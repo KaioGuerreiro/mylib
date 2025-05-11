@@ -1,0 +1,30 @@
+# Arquivos Python
+__pycache__/
+*.py[cod]
+
+# Ambiente virtual do Pipenv
+backend/Pipfile.lock
+
+# Banco de dados SQLite
+backend/mylib/db.sqlite3
+
+# Arquivos temporários
+*.log
+*.pot
+*.pyc
+.DS_Store
+Thumbs.db
+
+# Arquivos de ambiente
+.env
+backend/.env
+
+# Configs de editor
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Node (para o frontend React futuramente)
+frontend/node_modules/
+frontend/.env
