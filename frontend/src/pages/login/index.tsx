@@ -21,10 +21,14 @@ export default function Login() {
       const token = response.data.token;
       console.log(token);
       localStorage.setItem("token", token);
+      if (localStorage.getItem("token")) {
+        window.location.href = "/home";
+      }
     } catch (error) {
       console.error("Erro ao fazer login:", error);
       alert("Erro ao fazer login. Verifique suas credenciais.");
     }
+    
     
   };
 
